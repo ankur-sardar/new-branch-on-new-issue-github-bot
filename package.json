@@ -1,0 +1,46 @@
+{
+  "name": "new-brnach-on-new-issue",
+  "version": "1.0.0",
+  "description": "When creating a new issue, make a branch with the name of that issue.",
+  "author": "Ankur Sardar <ankur.sardar18@gmail.com> (https://github.com/ankur-sardar)",
+  "license": "ISC",
+  "repository": "https://github.com/ankur-sardar/https://github.com/ankur-sardar/new-branch-on-new-issue-github-bot.git",
+  "homepage": "https://github.com/ankur-sardar/https://github.com/ankur-sardar/new-branch-on-new-issue-github-bot",
+  "bugs": "https://github.com/ankur-sardar/https://github.com/ankur-sardar/new-branch-on-new-issue-github-bot/issues",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "dev": "nodemon",
+    "start": "probot run ./index.js",
+    "lint": "standard --fix",
+    "test": "jest && standard",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+  },
+  "dependencies": {
+    "probot": "^7.0.0"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.2",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "nodemonConfig": {
+    "exec": "npm start",
+    "watch": [
+      ".env",
+      "."
+    ]
+  }
+}
