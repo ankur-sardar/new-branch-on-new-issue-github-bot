@@ -14,6 +14,7 @@ module.exports = app => {
 
   // Add a branch on issue name
   app.on(`issues.opened`, createNewBranch)
+  app.on(`issues.assigned`, createNewBranch)
 
   // For more information on building apps:
   // https://probot.github.io/docs/
